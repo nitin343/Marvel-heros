@@ -70,11 +70,11 @@ const CharacterCard = memo(({ character }: any) => {
 
     return (
         <>
-            <section className="text-gray-700 body-font w-full md:overflow-hidden">
-                <div className="container px-5 py-16  mx-auto flex md:flex-col overflow-x-auto  flex-row flex-wrap gap-3 justify-center align-baseline w-full">
+            <section className="text-gray-700 body-font w-full md:overflow-hidden  md:justify-center md:items-center flex border-2 border-red-600">
+                <div className="container px-5 py-16 md:py-5 md:px-0  mx-auto flex md:flex-col overflow-x-auto  flex-row flex-wrap gap-3 justify-center align-baseline w-full">
                     {
                        character && character.map((data: any) => (
-                            <div onMouseEnter={() => setVisiblity(data, 'visible')} onMouseLeave={() => setVisiblity(data, 'invisible')} key={data.id} onClick={() => heroCard(data)} className="flex relative flex-wrap -m-4 text-center w-1/3 S:w-[100%] md:w-full md:my-[10px] justify-center align-baseline cursor-pointer">
+                            <div onMouseEnter={() => setVisiblity(data, 'visible')} onMouseLeave={() => setVisiblity(data, 'invisible')} key={data.id} onClick={() => heroCard(data)} className="flex relative flex-wrap -m-4 md:m-0 md:mb-10 text-center w-1/3 S:w-[100%] md:w-[100%] md:my-[10px] justify-center align-baseline cursor-pointer">
                                 <div>
                                     <div className="border-2 border-gray-600 rounded-lg flex flex-col  items-center overflow-hidden">
                                         <Image priority src={`${data.thumbnail.path}.${data.thumbnail.extension}`} alt={data.name} width={360} height={80} className="mb-4 -z-10 transform transition duration-500 hover:scale-x-110 hover:scale-y-105 !h-[360px]" />
