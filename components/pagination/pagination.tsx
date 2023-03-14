@@ -34,7 +34,7 @@ function Pagination({ paginationProps }: paginationDataType) {
     return (
         <>        {
             paginationProps && (
-                <div className='fixed bottom-10 w-[100%] flex flex-row  md:bottom-0 justify-center items-center md:bg-white' >
+                <div className='fixed md:pt-4 bottom-10 w-[100%] flex flex-row  md:bottom-0 justify-center items-center md:bg-white' >
                     <div> <button onClick={prevCard} disabled={currentState.prev} style={currentState.prev ? { backgroundColor: 'grey', color: 'white' } : { backgroundColor: 'white' }} className='border-2 border-black rounded-md px-5 py-1 mx-2'>Prev</button></div>
                     <div> <span>{currentPage} of {paginationProps.pageSize}</span></div>
                     <div> <button onClick={nextCard} disabled={currentState.next} style={currentState.next ? { backgroundColor: 'grey', color: 'white' } : { backgroundColor: 'white' }} className='border-2 border-black rounded-md px-5 py-1 mx-2'>Next</button> </div>
