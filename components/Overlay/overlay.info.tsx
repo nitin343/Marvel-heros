@@ -14,7 +14,7 @@ function OverlayInfo() {
             {
                 data ? (
                     <div >
-                        <div className='fixed w-[70%] md:w-[100%] overflow-y-scroll h-[90vh] px-2 border-2 border-gray-500 bg-white z-50'>
+                        <div className='fixed w-[70%] md:w-[100%] md:h-[80vh] overflow-y-scroll h-[90vh] px-2 border-2 border-gray-500 bg-white z-50'>
                            <OverlayHeader data={data} className='px-10'/>
                            <OverlayBody name='Stories' data={data.stories.items} />
                            <OverlayBody name='Comics' data={data.comics.items} />
