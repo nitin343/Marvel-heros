@@ -70,7 +70,7 @@ const CharacterCard = memo(({ character }: any) => {
 
     return (
         <>
-            <section className="text-gray-700 body-font w-full md:overflow-hidden  md:justify-center md:items-center flex border-2 border-red-600">
+            <section className="text-gray-700 body-font w-full md:overflow-hidden  md:justify-center md:items-center flex">
                 <div className="container px-5 py-16 md:py-5 md:px-0  mx-auto flex md:flex-col overflow-x-auto  flex-row flex-wrap gap-3 justify-center align-baseline w-full">
                     {
                        character && character.map((data: any) => (
